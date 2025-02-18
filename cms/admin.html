@@ -1,46 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel - Hotelcatz</title>
+    <title>CMS 管理界面</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="cms.css">
 </head>
 <body>
-    <header>
-        <h1>Hotelcatz CMS</h1>
-    </header>
+    <div class="admin-container">
+        <h1>管理子页面链接</h1>
+        <form id="pageForm">
+            <label for="pageTitle">页面标题：</label>
+            <input type="text" id="pageTitle" placeholder="输入页面标题" required>
+            <label for="pageUrl">页面链接：</label>
+            <input type="text" id="pageUrl" placeholder="输入页面链接" required>
+            <button type="submit">添加页面</button>
+        </form>
 
-    <main>
-        <section>
-            <h2>Manage Content</h2>
-
-            <!-- Editable Gallery Section -->
-            <div id="gallery-editor">
-                <h3>Edit Gallery</h3>
-                <div id="gallery-images">
-                    <!-- Images dynamically loaded here -->
-                </div>
-                <input type="file" id="upload-image" accept="image/*">
-                <button id="add-image">Add Image</button>
-            </div>
-
-            <!-- Editable Blog Section -->
-            <div id="blog-editor">
-                <h3>Edit Blog</h3>
-                <div id="blog-posts">
-                    <!-- Blog posts dynamically loaded here -->
-                </div>
-                <textarea id="new-post" placeholder="Write a new blog post..."></textarea>
-                <button id="add-post">Add Blog Post</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Hotelcatz CMS. All rights reserved.</p>
-    </footer>
+        <h2>已添加的子页面</h2>
+        <ul id="pagesList"></ul>
+    </div>
 
     <script src="cms.js"></script>
 </body>

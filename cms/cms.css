@@ -1,65 +1,66 @@
-css
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: #f4f4f4;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
-section {
-    background: #fff;
-    margin: 20px auto;
+.admin-container {
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#gallery-editor, #blog-editor {
-    margin-top: 20px;
+h1, h2 {
+    color: #333;
 }
 
-#gallery-images img {
-    width: 100px;
-    margin: 5px;
-    border-radius: 4px;
-    cursor: pointer;
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #333;
+    padding: 10px 15px;
+    background-color: #007bff;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #555;
+    background-color: #0056b3;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+li button {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #c82333;
 }
