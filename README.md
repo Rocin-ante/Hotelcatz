@@ -46,8 +46,8 @@ Hotelcatz/
 
 |-- assets/
 
-    |-- fonts/       # Custom fonts
+|   |-- fonts/       # Custom fonts
     
-    |-- docs/        # Documentation or help files
+|   |-- docs/        # Documentation or help files
 
   
