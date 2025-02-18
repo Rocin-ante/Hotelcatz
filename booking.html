@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Hotelcatz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Hotelcatz Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Book a Room</h1>
+            <form>
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+    
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+    
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+    
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="family">Family Room</option>
+                </select>
+    
+                <label for="preferences">Special Requests:</label>
+                <textarea id="preferences" name="preferences" rows="4" placeholder="Enter any special requests (optional)"></textarea>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Hotelcatz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
